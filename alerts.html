@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Öğreniyorum</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center"> Bootstrap Öğreniyorum</h1>
+        <hr>
+        <h2 class="text-left">Alerts</h2>
+        <div>
+            <div class="alert alert-primary">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-secondary">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-success">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-danger">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-info">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-dark">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-light">Lorem ipsum <a class="alert-link" href="https://google.com"> dolor </a> sit amet.</div>
+            <div class="alert alert-warning">Lorem ipsum dolor sit amet.</div>
+            <div class="alert alert-primary">
+                Lorem ipsum dolor sit amet.
+                <button class="close" data-dismiss="alert"> &times; </button>
+            </div>
+            <div>
+                <button class="btn btn-danger" id="btnKapat">Yukarıdaki tüm alertleri kapat</button>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $("#btnKapat").click(function()
+        {
+            $(".alert").alert("close");
+        });
+    </script>
+</body>
+</html>
